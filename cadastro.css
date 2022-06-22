@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container {
+    background-color: rgba(255, 255, 255, 0.39);
+    max-width: 400px;
+    min-height: 45vh;
+    padding: 2em;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+main h2 {
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input::placeholder {
+    color: rgba(211, 211, 211, 0.68);
+}
+
+.input-field {
+    position: relative;
+    width: 100%;
+}
+
+.user,
+.password {
+    background: #784BA0;
+    border-radius: 4px;
+    box-shadow: 0px 7px 15px 0px rgba(100, 100, 111, 0.5);
+    position: relative;
+}
+
+.user {
+    margin-bottom: 1em;
+}
+
+.user .password,
+input {
+    background: transparent;
+    font-size: 1em;
+    color: white;
+}
+
+.user .password,
+input:focus {
+    outline: none;
+}
+
+.user > i,
+.password > i {
+    font-size: 1.3em;
+    padding: 0.4em;
+    color: white;
+    transition: 0.3s;
+}
+
+.password .fa-eye,
+.password .fa-eye-slash {
+    cursor: pointer;
+    color: white;
+    width: 1em;
+}
+
+.password > div:nth-child(2) {
+    position: relative;
+}
+
+form > button[type="submit"] {
+    margin-top: 2em;
+    padding: 0.4em;
+    background: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    background-size: 300% 300%;
+    animation: gradientEffect 3s linear infinite alternate;
+    box-shadow: 0px 7px 15px 0px rgba(100, 100, 111, 0.5);
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+form > button[type="submit"]:hover {
+    letter-spacing: 1px;
+}
+
+@keyframes gradientEffect {
+    from { background-position: 0 0;}
+    to { background-position: 100% 100%;}
+}
+
+div.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+div span {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.9em;
+    font-weight: 600;
+    text-align: center;
+    cursor: default;
+}
+
+button.btn-social-media {
+    padding: 0.3em;
+    border-radius: 4px;
+    font-size: 0.90em;
+    box-shadow: 0px 7px 15px 0px rgba(100, 100, 111, 0.5);
+    width: 100%;
+    margin-top: 1em;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.btn-social-media a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-social-media a i {
+    margin: 0.5em;
+    width: 15px;
+}
+
+.btn-social-media .facebook {
+    background: linear-gradient(160deg, #0093E9 0%, #54a8bd 100%);
+    cursor: pointer;
+}
+
+.btn-social-media .facebook:hover {
+    background: linear-gradient(-160deg, #0093E9 0%, #54a8bd 100%);
+    letter-spacing: 1px;
+}
+
+.btn-social-media .whatsapp {
+    background: linear-gradient(160deg, #00c76b 0%, #51f19c 100%);
+    cursor: pointer;
+}
+
+.btn-social-media .whatsapp:hover {
+    background: linear-gradient(-160deg, #00c76b 0%, #51f19c 100%);
+    letter-spacing: 1px;
+}
+
+div.copyright a {
+    color: rgba(255, 255, 255, 0.329);
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+}
